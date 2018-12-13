@@ -9,8 +9,12 @@
   "scripts": {
     "test": "./bin/px2rpx demo/demo.wpy"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pspgbhu/wpy-px2rpx"
+  },
   "keywords": [],
-  "author": "",
+  "author": "pspgbhu <brotherchun001@gmial.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.19.0",

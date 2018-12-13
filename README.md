@@ -5,14 +5,22 @@
 ## Usage
 
 ```
-px2rpx src/mycomponent.wpy
+px2rpx <filename> [options]
 ```
+
 
 为了安全起见，默认不是覆盖原有文件，而是生成一个新的文件副本。
 
-上述命令将会生成 src/mycomponent.rpx.wpy 文件
+例如
+
+```
+px2rpx src/mycomponent.wpy
+```
+
+将会生成 src/mycomponent.rpx.wpy 文件。
 
 增加 `--cover` 命令以开始覆盖源文件模式（为了防止未知的问题，暂时不推荐这么干）
+
 ```
 px2rpx src/mycomponent.wpy --cover
 ```
