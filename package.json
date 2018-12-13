@@ -1,0 +1,19 @@
+{
+  "name": "wpy-px2rpx",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "px2rpx": "./bin/px2rpx"
+  },
+  "scripts": {
+    "test": "./bin/px2rpx demo/demo.wpy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "fs-extra": "^7.0.1"
+  }
+}
