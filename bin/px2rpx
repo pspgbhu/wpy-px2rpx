@@ -4,8 +4,15 @@ const program = require('commander')
 
 program
   .usage('<filename> [options]')
-  .option('-c, --cover', 'cover mode')
+  .option('-c, --cover ', 'Open cover mode. The program will modify the source file, rather than create a new copy.')
+  .option('-r, --rate <rate number>', 'Set the multiplier')
   .parse(process.argv)
 
 const [filename] = program.args
-px2rpx(filename, { cover: program.cover })
+
+console.log(program)
+
+px2rpx(filename, {
+  cover: program.cover,
+  rate: program.rate
+})

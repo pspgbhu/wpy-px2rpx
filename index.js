@@ -3,8 +3,9 @@ const fs = require('fs-extra')
 const Convert = require('./convert')
 
 module.exports = function px2rpx(filename, opts = {}) {
+  const { rate = 2 } = opts
   const absolutePath = path.isAbsolute(filename) ? filename : path.join(path.resolve(), filename)
-  const newContent = new Convert(absolutePath).px2rpx(2)
+  const newContent = new Convert(absolutePath).px2rpx(rate)
 
   if (!fs.existsSync(absolutePath)) {
     throw new Error(`The target file not existed! ${absolutePath}`)
