@@ -1,6 +1,6 @@
 {
   "name": "wpy-px2rpx",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,6 @@
     "test": "DEBUG=px2rpx ./bin/px2rpx demo/demo.wpy",
     "version": "git add --all",
     "postversion": "npm publish && git push --follow-tags"
-
   },
   "repository": {
     "type": "git",
