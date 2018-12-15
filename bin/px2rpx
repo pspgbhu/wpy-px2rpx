@@ -10,8 +10,6 @@ program
 
 const [filename] = program.args
 
-console.log(program)
-
 px2rpx(filename, {
   cover: program.cover,
   rate: program.rate
